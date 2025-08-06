@@ -14,9 +14,9 @@ FROM golang
 
 RUN echo OK
 
-FROM ubuntu AS base
+FROM ubuntu:24.10 AS base
 
 LABEL org.opencontainers.image.version
 label org.opencontainers.image.version=0.14.0
 
-FROM ubuntu AS golang
+FROM ubuntu:24.10 AS golang
